@@ -1,0 +1,28 @@
+:root{
+--huisstijl_background: #f8f8f8;
+--Huisstijl_font: black; 
+--FontKleur_v_foto: #ffffff;
+--nav_bcolor: #EAEEF0;
+}
+
+nav {
+    background-color: var(--nav_bcolor);
+    
+}
+
+nav ul {
+     list-style: none;
+       position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+    translate:-100% 0;
+}
+a {
+    color: var(--Huisstijl_font);
+    text-decoration: none;
+}
+
+nav.is-open ul {
+  translate: 0 0; }

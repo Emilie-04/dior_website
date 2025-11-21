@@ -56,7 +56,11 @@ https://www.dior.com/nl_nl/fashion
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+1. remove horizontal scrolling
+2. Alle fotos hebben een alt element nodig
+3. media niet laten autoplayen
+4. geen dark mode
+
 
 </details>
 
@@ -68,13 +72,14 @@ https://www.dior.com/nl_nl/fashion
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown_schets1.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown_schets2.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  
 
 </details>
 
@@ -94,12 +99,14 @@ https://www.dior.com/nl_nl/fashion
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Emilie: 
+ 1.  tot hoever moet de website in de detailles uitgewerkt worden?
+2. waarom speelt de video niet af en hoe kan ik zorgen dat ie niet automatisch gaat afspelen?
+3. Hoe zet ik de fonts erin nadat ik ze gedouload heb?
 
+Roos:
+1. Hoe kan ik in mijn menu nog een menu maken?
+2. Wat valt er onder de header?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
