@@ -102,7 +102,7 @@ https://www.dior.com/nl_nl/fashion
 Emilie: 
  1.  tot hoever moet de website in de detailles uitgewerkt worden?
 2. waarom speelt de video niet af en hoe kan ik zorgen dat ie niet automatisch gaat afspelen?
-3. Hoe zet ik de fonts erin nadat ik ze gedouload heb?
+3. Hoe zet ik de fonts erin nadat ik ze gedownload heb?
 
 Roos:
 1. Hoe kan ik in mijn menu nog een menu maken?
@@ -111,9 +111,8 @@ Roos:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+
+  - icon svg
   - ...
 
 </details>

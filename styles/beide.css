@@ -1,3 +1,37 @@
+@font-face {
+    font-family: "Hellix";
+    src: url("../fonts/Hellix-Regular.woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Hellix";
+    src: url("../fonts/Hellix-Bold.woff2");
+    font-weight:700;
+}
+@font-face {
+    font-family: "Hellix";
+    src: url("../fonts/Hellix-Medium.woff2");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Hellix";
+    src: url("../fonts/Hellix-SemiBold.woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Hellix";
+    src: url("../fonts/Hellix-Light.woff2");
+    font-weight: 300;
+}
+
+*, *::after, *::before {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;  
+}
+
+
 :root{
 --huisstijl_background: #f8f8f8;
 --Huisstijl_font: black; 
@@ -5,24 +39,37 @@
 --nav_bcolor: #EAEEF0;
 }
 
-nav {
-    background-color: var(--nav_bcolor);
+
+
+h1, h2, p {
+    color: var(--FontKleur_v_foto)
+}
+body {
+    font-family: "Hellix";
+}
+div img{
+   position: relative;
+   max-width: 2em;
+   color: var(--FontKleur_v_foto);
     
 }
 
-nav ul {
-     list-style: none;
-       position:fixed;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-    translate:-100% 0;
-}
-a {
-    color: var(--Huisstijl_font);
-    text-decoration: none;
+header nav{
+    position: fixed;
+    inset: 0;
+    background-color: #EAEEF0;
+    transform: translateX(100%);
+    transition: .25s ease;
+    
+
+    & a{
+        color: black;
+        text-decoration: none;
+        list-style: none;
+    }
 }
 
-nav.is-open ul {
-  translate: 0 0; }
+header nav.open{
+    transform: translateX(0%);
+}
+
