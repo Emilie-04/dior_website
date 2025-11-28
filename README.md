@@ -133,12 +133,27 @@ Roos:
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Roos:
+hoe krijg ik een gradiant op mijn foto?
+hoe spreek ik meerdere types aan zonder dit 2x het zelfde erin te moeten zetten met nth-of-type()
+hoe krijg ik die pijltjes gestyld in de details/summary
 
+Lois:
+1.Als er een timer midden in de tekst staat, moet dit dan toegevoegd worden in html en zo ja hoe voeg je dit toe?
+2. Kan je ook meerdere sections in een section hebben of dien je dan articles te gebruiken?
+ 
+
+Emilie:
+hoe krijg ik de puntjes bij mijn lijst weg? (hoe het normaal gedaan wordt werkt niet)
+Ik hen een div is dit div waardig?
+Hoe zet ik de svg er goed in?
+Hoe krijgt ik mijn sections goed onder elkaar?
+
+Eva:
+hoe pas ik flexbox (of een grid) toe op een description list zonder divs te gebruiken?
+- is het legaal om een font van onlinewebfonts.com te downloaden en toe te voegen met @fontface?
+- kan ik beter een grid of flexbox gebruiken voor de layout van mijn sections?
+- wat is de beste tag voor een label?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
