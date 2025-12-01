@@ -1,25 +1,16 @@
 
-const menuButton = document.querySelector("header button")
-const sluitButton = document.querySelector("header nav button")
+const menuButton = document.querySelector("header button ")
 const deNav = document.querySelector("header nav")
 
 
-menuButton.addEventListener("click", openMenu);
-sluitButton.addEventListener("click", sluitMenu)
+menuButton.onclick = toggleMenu;
 
-function openMenu () {
- deNav.classList.add("open")
+
+function toggleMenu () {
+ deNav.classList.toggle("open")
 }
 
-function sluitMenu () {
- deNav.classList.remove("open")
-}
-
-
-
-
-
-
+console.log("button found?", menuButton);
 
 
 

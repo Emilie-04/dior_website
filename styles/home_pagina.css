@@ -5,14 +5,14 @@ main section:first-of-type {
   height: 100vh;       
 }
 
-nav{
-    order:-1;
-}
+
+
+
 
 video {
     position: absolute;
-    width: 100%;
- inset: 0;
+    /* width: 100%; */
+    inset: 0;
     z-index: -1;
     object-fit: cover;
 }
@@ -24,19 +24,39 @@ section:first-of-type p,
 section:first-of-type a {
   position: relative;
   text-align: center;
+  top: 50%;
   color: var(--FontKleur_v_foto);
   display: block;
 }
+/* 
+section:first-of-type p{
+  order: -1;
+} */
 
-header {
-display:flex;
-  justify-content:space-between;
 
-}
 
 
 section > img:first-of-type {
   max-width: 2em; 
+}
+article{
+    display: grid;
+     
+}
+
+article h2{
+    z-index: 1;
+    display: grid;
+    grid-row-start: 1;
+    align-self: end;
+    
+}
+article img{
+object-fit: stretch;
+    width: 96%;
+    position: relative;
+  left: 2%;
+
 }
 
 
