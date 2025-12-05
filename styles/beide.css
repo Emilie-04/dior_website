@@ -56,28 +56,54 @@ body, html {
     padding: 0;  
 }
 
+main section:first-of-type {
+  position: relative;  
+  height: 80svh;       
+}
+
 header{
     width: 100%;
-    z-index: 1;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+}
+
+button{
+ border: none;
+ background-color: none;
+ 
 }
 
 header svg{
     width: 1.5em;
     height: auto;
+    fill: var(--nav_bcolor);
 }
  
 header > svg:nth-of-type(1){
-     width: 5em;
+     width: 4em;
     height: auto;
+    display: flex;
 }
+
+header  > ul > li:nth-of-type(3) svg {
+  display: flex;
+  flex-grow: 10em;
+    width: 5em;
+    height: auto;
+flex-grow: 1;
+
+}
+
 
 header  > ul:nth-of-type(1) {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
+    justify-content: space-between;
     align-items: center;
-    padding: 0;
+    gap: 1em;
+    list-style: none;
+    padding: 0 5%;
+    margin: 0;
 
 }
 
@@ -91,7 +117,7 @@ header nav{
     background-color: var(--nav_bcolor);
 
     & a{
-        color: black;
+        color: var(--Huisstijl_font);
         text-decoration: none;
         list-style: none;
     }

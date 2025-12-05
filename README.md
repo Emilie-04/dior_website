@@ -195,11 +195,24 @@ hoe pas ik flexbox (of een grid) toe op een description list zonder divs te gebr
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+ Roos:
+Waarom tabt ie ook de linkjes in het gesloten menu?
+Hoezo zit hier witruimte en hoe krijg ik die weg?
+Valt het hamburgermenu en automatische carousel onder de 5 elementen van surface plane?
+
+ Lois:
+1. hoe ik mijn nav elementen over mijn header img krijg, of dat ik het op dezelfde grid lijn dien te zetten of dit met position absolute kan fixen? (want position absolute werkt nog niet)
+2. hoe bewerk ik verschillende svg's in de nav apart van elkaar? nth of type lukt even niet
+
+ Emilie:
+1. Ook een witruimte die ik niet weg krijg
+2. Achtergrond kleur bij de nav icoon krijg ik niet weg
+3. Hoe krijg ik het middelste svg met meer ruimste tussen de andere nav elementen?
+
+ Eva:
+Wat is de beste plek voor mijn custom properties?
+Heb ik de <table> correct gemaakt?
+hoe hou ik een grid item vierkant op hele smalle schermen?
 
 
   ### Verslag van meeting
