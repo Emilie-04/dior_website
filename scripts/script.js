@@ -1,16 +1,14 @@
-
-const menuButton = document.querySelector("header button ")
-const deNav = document.querySelector("header nav")
+const menuButton = document.querySelector("header > ul > li > button"); 
+const closeButton = document.querySelector("header nav button"); 
+const deNav = document.querySelector("header nav");
 
 
 menuButton.onclick = toggleMenu;
+closeButton.onclick = toggleMenu;
 
-
-function toggleMenu () {
- deNav.classList.toggle("open")
+function toggleMenu() {
+  deNav.classList.toggle("open");
 }
-
-console.log("button found?", menuButton);
 
 
 

@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Surface plane
+  responsive
  
 </details>
 
@@ -59,7 +59,8 @@ https://www.dior.com/nl_nl/fashion
 1. remove horizontal scrolling
 2. Alle fotos hebben een alt element nodig
 3. media niet laten autoplayen
-4. geen dark mode
+4. website geen dark mode
+5. meet alt elementen bij fotos
 
 
 </details>
@@ -109,7 +110,8 @@ Roos:
 2. Wat valt er onder de header?
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  code hebben we zodat de video niet metteen afspeelt!
+  en fonts stawan ein!
 
 
   - icon svg
@@ -127,7 +129,7 @@ Roos:
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+het positioneren van de hoofpagina gaat niet goed vooral met de video en daarna de elemnten onderaan
 
 
   ### Agenda voor meeting
@@ -158,10 +160,8 @@ hoe pas ik flexbox (of een grid) toe op een description list zonder divs te gebr
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  goeie svs zitten er nu in
+
 
 </details>
 
@@ -175,7 +175,9 @@ hoe pas ik flexbox (of een grid) toe op een description list zonder divs te gebr
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  meer alt bij de afb
+  dark mode (sortvan)
+  goeie kopjes
 
 </details>
 
@@ -189,7 +191,8 @@ hoe pas ik flexbox (of een grid) toe op een description list zonder divs te gebr
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+alle kleine dingen gaan fout waardoo ik er heel veel tijd op spendeer en moeilijk voortgang maak.
+
 
 
   ### Agenda voor meeting
@@ -218,10 +221,7 @@ hoe hou ik een grid item vierkant op hele smalle schermen?
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  wat meer logisch proberen te denken, proberen echt wat meer voortgang te maken
 
 </details>
 
@@ -235,19 +235,19 @@ hoe hou ik een grid item vierkant op hele smalle schermen?
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/pagina_voor_haar.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/posiotionering.png" width="375px" alt="uiteindelijk is het positioneen met grid goed gegaan">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/niet_goed.png" width="375px" alt="bummer">
 </details>
 
 

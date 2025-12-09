@@ -1,140 +1,126 @@
-
-
-header{
-    position: fixed;
-    width: 100%;
+header {
+  position: fixed;
+  width: 100%;
   background-color: var(--huisstijl_background);
-    top: 0;
+  top: 0;
 }
 
-
-header svg{
-    fill: var(--kleur_tweede_p_nav);
+header svg {
+  fill: var(--kleur_tweede_p_nav);
 }
 
-button > svg{
-    fill: var(--kleur_tweede_p_nav);
+button > svg {
+  fill: var(--kleur_tweede_p_nav);
 }
 
+main section ul {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 
-
-
-
- main section ul { 
-   
-	display:flex;
-	overflow-x:auto;
-	scroll-snap-type:x mandatory;
-	scroll-behavior:smooth; 
-	
   scrollbar-width: none;
-  
-   
 }
 
 main li {
-	scroll-snap-align:center;
-    /* min-width: 30em; */
-    min-width: 100vw; 
+  scroll-snap-align: center;
+  /* min-width: 30em; */
+  min-width: 100vw;
   touch-action: pan-y;
-    
 }
 
-main li img{
-    width: 100%;
+main li img {
+  width: 100%;
   height: auto;
+}
 
-} 
-
-main section ul::-webkit-scrollbar{
-display: none;
+main section ul::-webkit-scrollbar {
+  display: none;
 }
 
 main section ul::scroll-button(right) {
-    content: '>';
-    position: relative;
-    border: none;
-    background-color: transparent;
-    font-size: 3em;
-    left: 80%;
-    bottom: 8em;
-    
-   
-  
- } 
+  content: ">";
+  position: relative;
+  border: none;
+  background-color: transparent;
+  font-size: 3em;
+  left: 80%;
+  bottom: 8em;
+}
 
 main section ul::scroll-button(left) {
-    content: '<';
-     position: relative;
-    border: none;
-    background-color: transparent;
-    font-size: 3em;
-    left: 8%;
- bottom: 8em;
-
+  content: "<";
+  position: relative;
+  border: none;
+  background-color: transparent;
+  font-size: 3em;
+  left: 8%;
+  bottom: 8em;
 }
 
 main section:nth-of-type(2) ul::scroll-button(left):hover,
 main section:nth-of-type(2) ul::scroll-button(right):hover {
-    background-color: var(--transpaent_button_state);
-    
+  background-color: var(--transpaent_button_state);
 }
 
-main section:nth-of-type(2) li{
-    list-style: none;
+main section:nth-of-type(2) li {
+  list-style: none;
 }
-
 
 main section:nth-of-type(2) {
-    position: relative;
-    left: 10%;
-    bottom: 5em;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-   
-   
-    
+  position: relative;
+  left: 10%;
+  bottom: 5em;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
-main section:nth-of-type(2) svg{
-    position: relative;
-    width: 1.5em;
-
+main section:nth-of-type(2) svg {
+  position: relative;
+  width: 1.5em;
 }
 
-main section:nth-of-type(2) h2{
-    font-family: dior4;
-    font-size: 1em;
-    font-weight: 200;
-    color: var(--button_color);
-    margin: 0;
+main section:nth-of-type(2) h2 {
+  font-family: dior4;
+  font-size: 1em;
+  font-weight: 200;
+  color: var(--button_color);
+  margin: 0;
 }
 
-main section:nth-of-type(2) h3{
-    grid-row:2;
-    font-family: Hellix;
-    color: var(--button_color);
-    font-size: 0.8em;
-    font-weight: 500;
-    margin: 0;
+main section:nth-of-type(2) h3 {
+  grid-row: 2;
+  font-family: Hellix;
+  color: var(--button_color);
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0;
 }
 
-main section:nth-of-type(2) p{
-    grid-row-start: 3;
-     font-family: Hellix;
-    color: var(--button_color);
-    font-size: 0.8em;
-    font-weight: 500;
-   
+main section:nth-of-type(2) p {
+  grid-row-start: 3;
+  font-family: Hellix;
+  color: var(--button_color);
+  font-size: 0.8em;
+  font-weight: 500;
 }
 
 main section:nth-of-type(3) > img {
-    display: flex;
+  display: flex;
 }
 
-
-
-
-
-
+@media (prefers-color-scheme: dark){
+:root{
+    color-scheme: light dark;
+    --huisstijl_background: #222225;
+--article_background: #313135;
+--Huisstijl_font: rgb(236, 236, 236); 
+--FontKleur_v_foto: #ffffff;
+--kleur_tweede_p_nav:rgb(17, 16, 19);
+--nav_bcolor: #161619;
+--footer_background: #171718;
+--button_color:#33383C;
+--transpaent_button_state:#aeb5bb;
  
+}
+}

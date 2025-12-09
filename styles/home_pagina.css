@@ -15,14 +15,32 @@ video {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  filter: brightness(60%);
+
 }
 
-main section:first-of-type {
+main > section:first-of-type {
+   display: flex;           
+  flex-direction: column;
   position: relative;  
-  height: 80svh;       
+  height: 80svh;   
+    
+}
+main > section:first-of-type > p {
+  font-family: Hellix;
+  font-weight: 200;
+  font-size: 1em;
+  order: -1;
+}
+main > section:first-of-type > a{
+  font-family: Hellix;
+  font-weight: 100;
 }
 
-
+main > section:first-of-type > H2{
+  font-family: dior4;
+  font-weight: 100;
+}
 
 main section:first-of-type h2,
 main section:first-of-type p,
@@ -37,14 +55,18 @@ main section:first-of-type a {
 
 
 main section:nth-of-type(2) {
-    display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 2em; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 2em;
   text-align: center;
-  
 }
 
+main section:nth-of-type(2) > img:first-of-type,
+main section:nth-of-type(2) > p:first-of-type {
+  order: 0; /* bovenaan */
+  width: 100%;
+}
 
 section > img:first-of-type {
   max-width: 2em; 
@@ -52,6 +74,11 @@ section > img:first-of-type {
  top:1em;
 }
 
+main section:nth-of-type(2) > article{
+  position: relative;
+  width: 100%;
+  max-width: 25em;
+}
 
 main section:nth-of-type(2) article > img{
 filter: brightness(60%);
@@ -86,7 +113,6 @@ main section:nth-of-type(2) > article:nth-of-type(6) h2 {
   
 }
 
-/* hier naar kijken */
 main section:nth-of-type(2) > article:nth-of-type(1) h2:hover{
   text-decoration: underline;
 }
@@ -110,8 +136,40 @@ main a:hover{
   text-decoration: none;
 }
 
+main section:nth-of-type(2) > img:first-of-type,
+main section:nth-of-type(2) > p:first-of-type {
+  display: block;
+  text-align: center;
+}
 
 
 
 
+@media (min-width: 50em) {
+  main section:nth-of-type(2) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
+  main section:nth-of-type(2) > article {
+    width: 30%; 
+    margin-bottom: 2em;
+  }
+}
+
+@media (prefers-color-scheme: dark){
+:root{
+    color-scheme: light dark;
+    --huisstijl_background: #111114;
+--article_background: #28282d;
+--Huisstijl_font: rgb(236, 236, 236); 
+--FontKleur_v_foto: #ffffff;
+--kleur_tweede_p_nav:rgb(17, 16, 19);
+--nav_bcolor: #ffffff;
+--footer_background: #171718;
+--button_color:#33383C;
+--transpaent_button_state:#aeb5bb;
+ 
+}
+}
