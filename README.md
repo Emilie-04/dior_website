@@ -207,7 +207,7 @@ Valt het hamburgermenu en automatische carousel onder de 5 elementen van surface
  Emilie:
 1. Ook een witruimte die ik niet weg krijg
 2. Achtergrond kleur bij de nav icoon krijg ik niet weg
-3. Hoe krijg ik het middelste svg met meer ruimste tussen de andere nav elementen?
+3. Hoe krijg ik het middelste svg met meer ruimste tussen de andere nav elementen?00
 
  Eva:
 Wat is de beste plek voor mijn custom properties?

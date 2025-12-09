@@ -1,13 +1,12 @@
 
 
-main section:first-of-type {
-  position: relative;  
-  height: 100vh;       
+
+header{
+    width: 100%;
+   
+    position: absolute;
+    top: 0;
 }
-
-
-
-
 
 video {
   position: absolute;
@@ -18,53 +17,101 @@ video {
   z-index: -1;
 }
 
+main section:first-of-type {
+  position: relative;  
+  height: 80svh;       
+}
 
 
-section:first-of-type h2,
-section:first-of-type p,
-section:first-of-type a {
+
+main section:first-of-type h2,
+main section:first-of-type p,
+main section:first-of-type a {
   position: relative;
   text-align: center;
   top: 50%;
   color: var(--FontKleur_v_foto);
   display: block;
+  margin: 0;
 }
 
 
-section:nth-of-type(2) {
-    position: relative;
+main section:nth-of-type(2) {
+    display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 2em; 
   text-align: center;
-  display: block;
-}
-
-section > img:first-of-type {
-  max-width: 2em; 
- 
-}
-
-section:nth-of-type(2) > article:nth-of-type(1) {
-  position:relative;
-}
-
-section:nth-of-type(2) > article:nth-of-type(1) h2 {
-  position:absolute;
-  color: var(--FontKleur_v_foto);
-  font-weight: 200;
-  z-index: 1;
-  bottom: 1rem;
-  left: 1rem;
-  right: 1rem;
   
 }
 
 
-article img{
-object-fit: stretch;
-    width: 96%;
-    position: relative;
-  left: 2%;
-
+section > img:first-of-type {
+  max-width: 2em; 
+  position: relative;
+ top:1em;
 }
+
+
+main section:nth-of-type(2) article > img{
+filter: brightness(60%);
+}
+
+/* voor de tekst van de aticles */
+
+main section:nth-of-type(2) > article:nth-of-type(1),
+main section:nth-of-type(2) > article:nth-of-type(2),
+main section:nth-of-type(2) > article:nth-of-type(3),
+main section:nth-of-type(2) > article:nth-of-type(4),
+main section:nth-of-type(2) > article:nth-of-type(5),
+main section:nth-of-type(2) > article:nth-of-type(6) {
+  position:relative;
+}
+
+main section:nth-of-type(2) > article:nth-of-type(1) h2,
+main section:nth-of-type(2) > article:nth-of-type(2) h2,
+main section:nth-of-type(2) > article:nth-of-type(3) h2,
+main section:nth-of-type(2) > article:nth-of-type(4) h2,
+main section:nth-of-type(2) > article:nth-of-type(5) h2,
+main section:nth-of-type(2) > article:nth-of-type(6) h2 {
+  position:absolute;
+  color: var(--FontKleur_v_foto);
+  font-family: dior4;
+  font-weight: 300;
+  font-size: 2em;
+  z-index: 1;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  
+}
+
+/* hier naar kijken */
+main section:nth-of-type(2) > article:nth-of-type(1) h2:hover{
+  text-decoration: underline;
+}
+
+
+article img{
+    width: 96%;
+ 
+}
+
+
+
+/* voeg hier nog transition aan */
+main a{
+  color: var(--Huisstijl_font);
+ 
+  
+}
+
+main a:hover{
+  text-decoration: none;
+}
+
+
+
 
 
 

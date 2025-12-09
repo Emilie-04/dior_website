@@ -25,28 +25,44 @@
     font-weight: 300;
 }
 
-/* button{
-    background: none;
-    border: none;
-        display: flex;
-    justify-content: space-between;
-    height: 1.5em;
-    fill: var(--FontKleur_v_foto);
-    
-} */
+
+
+@font-face {
+    font-family: dior3;
+    src: url(../fonts/AtacamaTrial-1.otf);
+}
+
+@font-face {
+    font-family: dior4;
+    src: url(../fonts/AtacamaTrial-Light-BF63b76d760620e.otf);
+}
+
+
 
 
 :root{
---huisstijl_background: #f8f8f8;
+--huisstijl_background: #EEEEEE;
+--article_background: #F8F8F8;
 --Huisstijl_font: black; 
 --FontKleur_v_foto: #ffffff;
+--kleur_tweede_p_nav:black;
 --nav_bcolor: #EAEEF0;
+--footer_background: #FFFFFF;
+--button_color:#33383C;
+--transpaent_button_state:#aeb5bb;
 }
 
-/* button{
-    position: absolute;
-} */
+body{
+    position: relative;
+    z-index: -3;
+    background-color: var(--huisstijl_background);
+}
 
+main {
+  position: relative;
+  z-index: -2;
+  background-color: var(--article_background);
+}
 
 body, html {
     font-family: "Hellix";
@@ -56,26 +72,23 @@ body, html {
     padding: 0;  
 }
 
-main section:first-of-type {
-  position: relative;  
-  height: 80svh;       
-}
 
-header{
-    width: 100%;
-    z-index: 4;
-    position: absolute;
-    top: 0;
-}
+
+
 
 button{
  border: none;
- background-color: none;
+ background-color: transparent;
  
 }
 
+button a{
+    margin-inline: auto;
+}
+
+
 header svg{
-    width: 1.5em;
+    width: 1.3em;
     height: auto;
     fill: var(--nav_bcolor);
 }
@@ -84,16 +97,21 @@ header > svg:nth-of-type(1){
      width: 4em;
     height: auto;
     display: flex;
+ 
+}
+
+header > ul > li:nth-of-type(3) {
+  margin-inline: auto; /* Centreer het Dior-logo */
 }
 
 header  > ul > li:nth-of-type(3) svg {
-  display: flex;
-  flex-grow: 10em;
-    width: 5em;
+    position: relative;
+    left: 0.5em;
+     width: 5em;
     height: auto;
-flex-grow: 1;
 
 }
+
 
 
 header  > ul:nth-of-type(1) {
@@ -104,6 +122,7 @@ header  > ul:nth-of-type(1) {
     list-style: none;
     padding: 0 5%;
     margin: 0;
+
 
 }
 
@@ -127,4 +146,144 @@ header nav.open{
     transform: translateX(0%);
     background-color: var(--FontKleur_v_foto);
 }
+
+footer{
+    position: relative;
+    max-width: 95%;
+background-color: var(--footer_background);
+top: 2em;
+left: 1em;
+right: 5%;
+padding-bottom: 10em;
+
+
+
+}
+
+footer ul{
+    position: relative;
+    right: 1em;
+    list-style: none;  
+       display: grid; 
+    gap: 2em;
+   
+                  
+}
+
+footer li {
+ display: grid;
+grid-template-columns: 1fr auto; 
+gap: 1em;
+
+}
+
+footer h3{
+    margin: 0;
+    font-size: medium;
+    font-weight: 500;
+   
+}
+
+footer p{
+    margin: 0;
+    color: var(--Huisstijl_font);
+    font-size: medium;
+    grid-row-start: 2;
+  
+}
+
+footer svg  {
+     grid-row: span 2; 
+    width: 1em; 
+    height: 2em; 
+
+    position: relative; /* Make it relative to move it */
+    right: 0.5em;
+    top: 1em;
+}
+
+footer section:first-of-type,
+footer section:last-of-type {
+    position: relative;
+    top: 3em;
+}
+
+hr{
+    
+    width: 100%;
+
+}
+
+footer section:nth-of-type(2) {
+    position: relative;
+    left: 1.5em;
+    top: 6em;
+}
+
+footer section:nth-of-type(2) h2{
+    font-size: 1.2em;
+font-weight: 300;
+}
+
+
+/* see if there is a way to put this together */
+footer section:nth-of-type(2)  input{
+    width: 30em;
+     height: 3em;
+     border-width: 0.01em;
+    border-radius: 0.5em;
+    font-size: 0.9em;
+    
+}
+
+footer section:nth-of-type(2)  button{
+    position: relative;
+    top: 0.5em;
+    width: 30.4em;
+    border: var(--button_color);
+    height: 3.5em;
+    border-radius: 0.3em;
+    font-size: 0.9em;
+    color: var(--FontKleur_v_foto);
+    background-color: var(--button_color);
+}
+/* 
+input::placeholder{
+
+} */
+
+
+footer article h2:first-of-type
+{
+    color: var(--Huisstijl_font);
+    font-weight: 300;
+}
+
+footer article ul{
+    position: relative;
+    gap: 0.5em;
+  right: 2em;
+}
+
+footer article a{
+    position: relative;
+    left: 0;
+    color: var(--button_color);
+   text-decoration: none;
+   font-size: 1em;
+ font-weight: 200;
+
+}
+
+footer article a:hover{
+    text-decoration: underline;
+}
+
+footer article {
+    position: relative;
+    top: 3em;
+}
+
+
+
 
