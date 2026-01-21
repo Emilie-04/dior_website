@@ -268,3 +268,14 @@ hoe hou ik een grid item vierkant op hele smalle schermen?
   3. ...
 
 </details>
+
+
+
+details{
+  display: grid;
+gap: 2em;
+}
+
+summary::marker{
+  
+}

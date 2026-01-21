@@ -1,348 +1,345 @@
 @font-face {
-    font-family: "Hellix";
-    src: url("../fonts/Hellix-Regular.woff2") format('woff2');
-    font-weight: 400;
+  font-family: "Hellix";
+  src: url("../fonts/Hellix-Regular.woff2") format("woff2");
+  font-weight: 400;
 }
 @font-face {
-    font-family: "Hellix";
-    src: url("../fonts/Hellix-Bold.woff2") format('woff2');
-    font-weight:700;
+  font-family: "Hellix";
+  src: url("../fonts/Hellix-Bold.woff2") format("woff2");
+  font-weight: 700;
 }
 @font-face {
-    font-family: "Hellix";
-    src: url("../fonts/Hellix-Medium.woff2") format('woff2');
-    font-weight: 500;
+  font-family: "Hellix";
+  src: url("../fonts/Hellix-Medium.woff2") format("woff2");
+  font-weight: 500;
 }
 @font-face {
-    font-family: "Hellix";
-    src: url("../fonts/Hellix-SemiBold.woff2") format('woff2');
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Hellix";
-    src: url("../fonts/Hellix-Light.woff2") format('woff2');
-    font-weight: 300;
-}
-
-
-
-@font-face {
-    font-family: dior3;
-    src: url(../fonts/AtacamaTrial-1.otf);
+  font-family: "Hellix";
+  src: url("../fonts/Hellix-SemiBold.woff2") format("woff2");
+  font-weight: 600;
 }
 
 @font-face {
-    font-family: dior4;
-    src: url(../fonts/AtacamaTrial-Light-BF63b76d760620e.otf);
+  font-family: "Hellix";
+  src: url("../fonts/Hellix-Light.woff2") format("woff2");
+  font-weight: 300;
 }
 
-
-
-
-:root{
---huisstijl_background: #EEEEEE;
---article_background: #F8F8F8;
---Huisstijl_font: black; 
---FontKleur_v_foto: #ffffff;
---kleur_tweede_p_nav:black;
---nav_bcolor: #F8F8F8;
---footer_background: #FFFFFF;
---button_color:#33383C;
---transpaent_button_state:#aeb5bb;
+@font-face {
+  font-family: dior3;
+  src: url(../fonts/AtacamaTrial-1.otf);
 }
 
-body{
-    position: relative;
-    background-color: var(--huisstijl_background) var(--dark_blue_background);
+@font-face {
+  font-family: dior4;
+  src: url(../fonts/AtacamaTrial-Light-BF63b76d760620e.otf);
 }
 
-main {
+:root {
+  /* kleuren home page */
+  --zwart: #000000;
+  --header: #ffffff;
+  --main_b_color: #F8F8F8;
+  --donker_font: #33383C;
+  --dark_achtergrond: #33383c;
+  --web_achtergrond: #ffffff;
+  --iconen_nav: #ffffff;
+  --tekst_video: #ffffff;
+  --tusentekst: #7B8487;
+  --tekst_fotos: #ffffff;
+  --bevestigen_knop_footer: #383636;
+  --bevestigen_tekst: #757575;
+  --h3_footer_1:#484b4e;
+  --h3_kp_footer: #afb5b7;
+  --h2_footer: #2f3336;
+  --h3_p_footer_onder: #535455;
+  --hover_paypall: #d0d0d0;
+  --hover_buy:#5D676C; 
+  --tussenlijn: #bababa;
+}
+
+/* dark mode? */
+
+body {
   position: relative;
-  z-index: -2;
-  background-color: var(--article_background);
+  background-color: var(--huisstijl_background) var(--huisstijl_background);
 }
 
-body, html {
-    font-family: "Hellix";
-    overflow-x: hidden;
-    box-sizing:border-box;
-    margin: 0;
-    padding: 0;  
+body,
+html {
+  font-family: "Hellix";  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-
-
-
-button{
- border: none;
- background-color: transparent;
- 
+button {
+  border: none;
+  background-color: transparent;
 }
 
-button a{
-    margin-inline: auto;
+button a {
+  margin-inline: auto;
 }
 
-
-header svg{
-    width: 1.3em;
-    height: auto;
-    fill: var(--nav_bcolor);
+header svg {
+  width: 1.3em;
+  height: auto;
+  fill: var(--iconen_nav);
 }
- 
-header > svg:nth-of-type(1){
-     width: 4em;
-    height: auto;
-    display: flex;
- 
+
+header > svg:nth-of-type(1) {
+  width: 4em;
+  height: auto;
+  display: flex;
 }
 
 header > ul > li:nth-of-type(3) {
   margin-inline: auto; /* Centreer het Dior-logo */
 }
 
-header  > ul > li:nth-of-type(3) svg {
-    position: relative;
-    left: 0.5em;
-     width: 5em;
-    height: auto;
-
+header > ul > li:nth-of-type(3) svg {
+  position: relative;
+  left: 0.5em;
+  width: 5em;
+  height: auto;
 }
 
-
-
-header  > ul:nth-of-type(1) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1em;
-    list-style: none;
-    padding: 0 5%;
-    margin: 0;
-
-
+header > ul:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  list-style: none;
+  padding: 0 5%;
+  margin: 0;
 }
 
-
-header nav{
-      position: fixed;
-   inset: 0;
-   z-index: 2;
-    transform: translateX(-100%);
-    transition: .25s ease;
-    background-color: var(--nav_bcolor);
-      overflow-y: auto;
-
-   
+header nav {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  transform: translateX(-100%);
+  transition: 0.25s ease;
+  background-color: var(--nav_bcolor);
+  overflow-y: auto;
 }
 
-header nav ul{
-    display: flex;
-    list-style: none;
-    gap: 2em;
-    flex-direction: column;
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+  flex-direction: column;
 }
 
- header nav a{
-        color: var(--Huisstijl_font);
-        text-decoration: none;
-        
+header nav a {
+  color: var(--h3_footer_1);
+  text-decoration: none;
+}
+
+header nav a:hover{
+  text-decoration: underline;
+}
+
+header nav.open {
+  transform: translateY(0%);
+  width: 50%;
+  background-color: var(--web_achtergrond);
+}
+
+header nav.open button {
+  position: relative;
+  top: 1em;
+
+  font-size: 1em;
+  color: var(--h3_footer_1);
+}
+
+footer {
+  position: relative;
+  max-width: 95%;
+  background-color: var(--footer_background);
+  top: 2em;
+  left: 1em;
+  right: 5%;
+  padding-bottom: 10em;
+}
+
+footer section:nth-of-type(1) ul {
+  position: relative;
+  right: 1em;
+  list-style: none;
+  gap: 2em;
+
+  @media (width > 64em){
+        display: flex;
     }
 
-header nav.open{
-    transform: translateY(0%);
-    background-color: var(--nav_bcolor);
-}
-
-
-
-header nav.open button{
-    position: relative;
-    top: 1em;
- 
-    font-size: 1em;
-}
-
-footer{
-    position: relative;
-    max-width: 95%;
-background-color: var(--footer_background);
-top: 2em;
-left: 1em;
-right: 5%;
-padding-bottom: 10em;
-
-
 
 }
 
-footer ul{
-    position: relative;
-    right: 1em;
-    list-style: none;  
-       display: grid; 
-    gap: 2em;
-   
-                  
+footer section:nth-of-type(1) li{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5em;
+  border-bottom: 0.01em solid var(--tussenlijn);
+    padding-bottom:1em ;
+
+  @media (width > 64em)  {
+    border-bottom: none;
+    border-right: 0.01em solid var(--tussenlijn);
+  }
 }
 
-footer li {
- display: grid;
-grid-template-columns: 1fr auto; 
-gap: 1em;
-
+footer h3 {
+  color: var(--donker_font);
+  margin-bottom: 0;
+  font-size: medium;
+  font-weight: 400;
 }
 
-footer h3{
-    margin: 0;
-    font-size: medium;
-    font-weight: 500;
-   
+footer p {
+  color: var(--tusentekst);
+  margin: 0;
+  font-family: hellix;
+  font-size: 0.9em;
+  font-weight: 400;
+  grid-row-start: 2;
 }
 
-footer p{
-    margin: 0;
-    color: var(--Huisstijl_font);
-    font-size: medium;
-    grid-row-start: 2;
-  
-}
+footer svg {
+  grid-row: span 2;
+  width: 1em;
+  height: 2em;
 
-footer svg  {
-     grid-row: span 2; 
-    width: 1em; 
-    height: 2em; 
-
-    position: relative; /* Make it relative to move it */
-    right: 0.5em;
-    top: 1em;
+  position: relative;
+  right: 0.5em;
+  top: 1em;
 }
 
 footer section:first-of-type,
 footer section:last-of-type {
-    position: relative;
-    top: 3em;
+  position: relative;
+  top: 3em;
 }
 
-hr{
-    
-    width: 100%;
 
-}
 
 footer section:nth-of-type(2) {
-    display: flex;
-    flex-direction: column;
-    left: 1.5em;
-    top: 6em;
+  display: flex;
+  flex-direction: column;
+  left: 1.5em;
+  top: 6em;
+
+  @media(width > 60em){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
 }
 
-footer section:nth-of-type(2) h2{
-    font-size: 1.2em;
-font-weight: 300;
+footer section:nth-of-type(2) article {
+  grid-row: 4;
+}
+
+footer section:nth-of-type(2) h2 {
+  font-family: dior4;
+  color: var(--donker_font);
+  font-size: 1.2em;
+  font-weight: 100;
+  grid-column: 1/3;
 }
 
 
-/* see if there is a way to put this together */
-footer section:nth-of-type(2)  input{
-     width: 80%;
-     height: 3em;
-     border-width: 0.01em;
-    border-radius: 0.5em;
-    font-size: 2.5vw;
-    
+footer section:nth-of-type(2) input {
+  width: 80%;
+  height: 3em;
+  border-width: 0.01em;
+  border-radius: 0.5em;
+
 }
 
-footer section:nth-of-type(2)  button{
-    position: relative;
-    top: 0.5em;
-    width: 30em;
-    border: var(--button_color);
-    height: 3.5em;
-    border-radius: 0.3em;
-    font-size: 2.5vw;
-    color: var(--FontKleur_v_foto);
-    background-color: var(--button_color);
+footer section:nth-of-type(2) button {
+  position: relative;
+  top: 0.5em;
+  border: var(--bevestigen_knop_footer);
+  color: var(--tekst_fotos);
+  background-color: var(--bevestigen_knop_footer);
+
+
+  
 }
 
 footer section:nth-of-type(2) input,
 footer section:nth-of-type(2) button {
   width: 100%;
-  max-width: 80%;
+  max-width: 90%;
   box-sizing: border-box;
-  font-size: 2.5vw;
-  border-radius: 0.5em;
-  height: 3em;}
+  border-radius: 0.3em;
+  height: 3.5em;
 
+  @media (width > 31em) {
+    height: 3em;
+    max-width: 30em;
+    font-size: 1em;
+    grid-column: 1 /3;
+  }
 
-
-
-footer article h2:first-of-type
-{
-    color: var(--Huisstijl_font);
-    font-weight: 300;
+  
 }
 
-footer article ul{
-    position: relative;
-    gap: 0.5em;
-  right: 2em;
-}
 
-footer article a{
-    position: relative;
-    left: 0;
-    color: var(--button_color);
-   text-decoration: none;
-   font-size: 1em;
- font-weight: 200;
+footer article a {
+  position: relative;
+  left: 0;
+  text-decoration: none;
+  color: var(--tusentekst);
+  margin: 0;
+  font-family: hellix;
+  font-size: 0.9em;
+  font-weight: 400;
 
 }
 
-footer article a:hover{
-    text-decoration: underline;
+footer article a:hover {
+  text-decoration: underline;
 }
 
 footer article {
-    position: relative;
-    top: 3em;
+  position: relative;
+  top: 3em;
 }
 
 
 
-@media (min-width: 31em) {
-  footer section:nth-of-type(2) input,
-  footer section:nth-of-type(2) button {
-    width: 30em;      
-    max-width: 30em;  
-    font-size: 1em;   
-  }
-}
 
 
-@media (min-width: 62em) {
-  footer section:nth-of-type(2) input,
-  footer section:nth-of-type(2) button {
-    width: 30em;      
-    max-width: 30em;  
-    font-size: 1em;   
-  }
-}
 
-@media (prefers-color-scheme: dark){
-:root{
-    color-scheme: light dark;
-    --huisstijl_background: #111114;
---article_background: #28282d;
---Huisstijl_font: rgb(236, 236, 236); 
---FontKleur_v_foto: #ffffff;
---kleur_tweede_p_nav:rgb(17, 16, 19);
---nav_bcolor: #ffffff;
---footer_background: #171718;
---button_color:#33383C;
---transpaent_button_state:#aeb5bb;
  
-}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light dark;
+       --zwart: #100f0f;
+  --header: #ffffff;
+  --main_b_color: #121212;
+  --donker_font: #efefef;
+  --dark_achtergrond: #33383c;
+  --web_achtergrond: #ffffff;
+  --iconen_nav: #ffffff;
+  --tekst_video: #ffffff;
+  --tusentekst: #7B8487;
+  --tekst_fotos: #ffffff;
+  --bevestigen_knop_footer: #33383C;
+  --bevestigen_tekst: #ffffff;
+  --h3_footer_1: #2f3336;
+  --h3_kp_footer: #afb5b7;
+  --h2_footer: #2f3336;
+  --h3_p_footer_onder: #535455;
+  --hover_paypall: #252525;
+  --hover_buy:#5D676C;
+  --tussenlijn: #bababa;
+  }
 }

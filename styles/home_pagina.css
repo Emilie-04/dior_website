@@ -3,10 +3,11 @@
 
 header{
     width: 100%;
-   
+   z-index: 2;
     position: absolute;
     top: 0;
 }
+
 
 video {
   position: absolute;
@@ -14,7 +15,6 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
   filter: brightness(60%);
 
 }
@@ -23,7 +23,7 @@ main > section:first-of-type {
    display: flex;           
   flex-direction: column;
   position: relative;  
-  height: 80svh;   
+  height: 80vh;  
     
 }
 main > section:first-of-type > p {
@@ -31,15 +31,18 @@ main > section:first-of-type > p {
   font-weight: 200;
   font-size: 1em;
   order: -1;
+  z-index: 2;
 }
 main > section:first-of-type > a{
   font-family: Hellix;
   font-weight: 100;
+  z-index: 2;
 }
 
 main > section:first-of-type > H2{
   font-family: dior4;
   font-weight: 100;
+  z-index: 2;
 }
 
 main section:first-of-type h2,
@@ -48,18 +51,28 @@ main section:first-of-type a {
   position: relative;
   text-align: center;
   top: 50%;
-  color: var(--FontKleur_v_foto);
+  color: var(--tekst_video);
   display: block;
   margin: 0;
 }
 
 
 main section:nth-of-type(2) {
+  background-color: var(--);
+  color: var(--tusentekst);
   display: flex;
   flex-direction: column; 
   align-items: center;
   gap: 2em;
   text-align: center;
+
+
+
+  @media (width > 10em)  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 main section:nth-of-type(2) > img:first-of-type,
@@ -77,7 +90,8 @@ section > img:first-of-type {
 main section:nth-of-type(2) > article{
   position: relative;
   width: 100%;
-  max-width: 25em;
+  max-width: 20em;
+
 }
 
 main section:nth-of-type(2) article > img{
@@ -102,10 +116,10 @@ main section:nth-of-type(2) > article:nth-of-type(4) h2,
 main section:nth-of-type(2) > article:nth-of-type(5) h2,
 main section:nth-of-type(2) > article:nth-of-type(6) h2 {
   position:absolute;
-  color: var(--FontKleur_v_foto);
+        color: var(--tekst_fotos);
   font-family: dior4;
-  font-weight: 300;
-  font-size: 2em;
+  font-weight: 100;
+  font-size: 1.7em;
   z-index: 1;
   bottom: 1em;
   left: 1em;
@@ -124,14 +138,6 @@ article img{
 }
 
 
-
-/* voeg hier nog transition aan */
-main a{
-  color: var(--Huisstijl_font);
- 
-  
-}
-
 main a:hover{
   text-decoration: none;
 }
@@ -145,31 +151,3 @@ main section:nth-of-type(2) > p:first-of-type {
 
 
 
-@media (min-width: 50em) {
-  main section:nth-of-type(2) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  main section:nth-of-type(2) > article {
-    width: 30%; 
-    margin-bottom: 2em;
-  }
-}
-
-@media (prefers-color-scheme: dark){
-:root{
-    color-scheme: light dark;
-    --huisstijl_background: #111114;
---article_background: #28282d;
---Huisstijl_font: rgb(236, 236, 236); 
---FontKleur_v_foto: #ffffff;
---kleur_tweede_p_nav:rgb(17, 16, 19);
---nav_bcolor: #ffffff;
---footer_background: #171718;
---button_color:#33383C;
---transpaent_button_state:#aeb5bb;
- 
-}
-}

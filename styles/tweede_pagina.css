@@ -1,86 +1,130 @@
 header {
-  position: fixed;
   width: 100%;
-  background-color: var(--huisstijl_background);
+  background-color: var(--header);
   top: 0;
+  z-index: 1;
+  @media (width > 40em) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+  }
+
+  @media (prefers-color-scheme: dark){
+    border-top: solid 0.5em var(--zwart);
+     border-bottom: solid 0.5em var(--zwart);
+     background-color: var(--header);
+  }
 }
 
-header svg {
-  fill: var(--kleur_tweede_p_nav);
+header svg{
+  fill: var(--zwart);
 }
 
-button > svg {
-  fill: var(--kleur_tweede_p_nav);
+main {
+  background-color: var(--main_b_color);
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media (width > 60em) {
+    flex-direction: row-reverse;
+  }
 }
 
-main section ul {
+
+/* buttons goeie plek */
+
+main section:nth-of-type(2) {
+  position: relative;
+}
+
+/* picture */
+main section:nth-of-type(2) ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-
   scrollbar-width: none;
+
+  @media (width > 60em) {
+    flex-direction: column;
+  }
 }
 
-main li {
+main section:nth-of-type(2) li {
   scroll-snap-align: center;
-  /* min-width: 30em; */
-  min-width: 100vw;
+  width: 100%;
+  flex-shrink: 0;
   touch-action: pan-y;
 }
 
-main li img {
+main section:nth-of-type(2) li img {
   width: 100%;
   height: auto;
 }
 
-main section ul::-webkit-scrollbar {
-  display: none;
+main section:nth-of-type(2) ul::scroll-button(*) {
+  color: var(--zwart);
+  position: absolute;
+  top: 50%;
+
+  translate: 0 -50%;
+  background-color: transparent;
+  border: none;
+  font-size: 3em;
 }
 
-main section ul::scroll-button(right) {
+main section:nth-of-type(2) ul::scroll-button(right) {
   content: ">";
-  position: relative;
-  border: none;
-  background-color: transparent;
-  font-size: 3em;
-  left: 80%;
-  bottom: 8em;
+  right: 8%;
+
+  @media (width > 60em) {
+    content: "";
+  }
 }
 
-main section ul::scroll-button(left) {
+main section:nth-of-type(2) ul::scroll-button(left) {
   content: "<";
-  position: relative;
-  border: none;
-  background-color: transparent;
-  font-size: 3em;
   left: 8%;
-  bottom: 8em;
+
+  @media (width > 60em) {
+    content: "";
+  }
 }
 
 main section:nth-of-type(2) ul::scroll-button(left):hover,
 main section:nth-of-type(2) ul::scroll-button(right):hover {
-  background-color: var(--transpaent_button_state);
+  background-color: var(--tussenlijn);
 }
 
 main section:nth-of-type(2) li {
   list-style: none;
 }
 
-main section:nth-of-type(2) {
-  position: relative;
-  left: 10%;
-  bottom: 5em;
+/* right side */
+main > section:nth-of-type(1) {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  background-color: var(--main_b_color);
+  gap: 1em;
+  width: 95%;
+  align-self: center;
+  @media (width > 60em) {
+    flex-basis: 47%;
+    flex-shrink: 0;
+    align-self: start;
+    position: sticky;
+    top: 7em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
 
-main section:nth-of-type(2) svg {
-  position: relative;
-  width: 1.5em;
-}
-
-main section:nth-of-type(2) h2 {
+main section > h1:first-of-type {
+  grid-column: 1 / 3;
   font-family: dior4;
   font-size: 1em;
   font-weight: 200;
@@ -88,39 +132,244 @@ main section:nth-of-type(2) h2 {
   margin: 0;
 }
 
-main section:nth-of-type(2) h3 {
+main section:nth-of-type(1) a {
+  justify-self: end;
+}
+
+main section:nth-of-type(1) svg {
+  grid-column-start: 4;
+  width: 1.5em;
+  fill: var(--donker_font);
+}
+
+main section > p:nth-of-type(1) {
+  grid-column: 1 / 2;
   grid-row: 2;
+}
+
+main section > p:nth-of-type(2) {
+  grid-column: 2 / 4;
+  grid-row-end: 3;
+  justify-self: end;
+}
+
+main section:nth-of-type(1) input {
+  display: none;
+}
+
+main section:nth-of-type(1) p, main section:nth-of-type(1) li {
   font-family: Hellix;
-  color: var(--button_color);
+  color: var(--donker_font);
   font-size: 0.8em;
   font-weight: 500;
+}
+
+main section:nth-of-type(1) form {
+  grid-column: 1/4;
+  grid-row: 3;
+}
+
+main > section:nth-of-type(1) img {
+  max-width: 5em;
+}
+
+main section:nth-of-type(1) img:hover {
+  cursor: pointer;
+}
+
+/* bestellen button */
+main section:nth-of-type(1) button:nth-of-type(1) {
+  display: flex;
+  height: 4em;
+  grid-column: 1/4;
+  border-radius: 0.5em;
+  color: var(--tekst_fotos);
+  justify-content: space-between;
+  border: var(--bevestigen_knop_footer);
+  background-color: var(--h3_footer_1);
+  position: sticky;
+  top: 2em;
+  bottom: 2em;
+
+ 
+}
+
+main section:nth-of-type(1) > button > h2,
+main section:nth-of-type(1) > button > p {
+  position: relative;
+  color: var(--bevestigen_knop);
+  font-size: 1.2em;
+  font-family: hellix;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  top: 25%;
+}
+
+/* snelle betaling button */
+main section:nth-of-type(1) button:nth-of-type(2) {
+  display: flex;
+  height: 4em;
+  grid-column: 1/4;
+  border-radius: 0.5em;
+  justify-content: space-between;
+  border-width: 3em;
+  border: var(--bevestigen_tekst);
+  background-color: var(--bevestigen_tekst);
+}
+
+main section:nth-of-type(1) h1 {
+  font-family: dior4;
+  font-size: 1.5em;
+}
+
+main section:nth-of-type(1) > p:nth-of-type(1),
+p:nth-of-type(2) {
+  padding: 0;
   margin: 0;
 }
 
-main section:nth-of-type(2) p {
-  grid-row-start: 3;
-  font-family: Hellix;
-  color: var(--button_color);
+form > h2 {
   font-size: 0.8em;
   font-weight: 500;
 }
 
-main section:nth-of-type(3) > img {
-  display: flex;
+main section:nth-of-type(1) button:nth-of-type(1):hover {
+  background-color: var(--hover_buy);
+  transition: 0.3s;
 }
 
-@media (prefers-color-scheme: dark){
-:root{
-    color-scheme: light dark;
-    --huisstijl_background: #222225;
---article_background: #313135;
---Huisstijl_font: rgb(236, 236, 236); 
---FontKleur_v_foto: #ffffff;
---kleur_tweede_p_nav:rgb(17, 16, 19);
---nav_bcolor: #161619;
---footer_background: #171718;
---button_color:#33383C;
---transpaent_button_state:#aeb5bb;
- 
+main section:nth-of-type(1) button:nth-of-type(2):hover {
+  background-color: var(--hover_paypall);
+  transition: 0.3s;
 }
+
+main section > p:nth-of-type(3) {
+  grid-column: 1/4;
+  margin: 0;
+  padding: 0;
+}
+
+details {
+  grid-column: 1/4;
+  border-bottom: 0.01em solid var(--tussenlijn);
+}
+
+details:first-of-type {
+  border-top: 0.01em solid var(--tussenlijn);
+}
+
+details p {
+  position: relative;
+  left: 2em;
+}
+
+summary {
+  position: relative;
+  line-height: 6em;
+  font-family: hellix;
+  color: var(--tusentekst);
+}
+
+summary::marker {
+  content: "";
+}
+
+aside {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  background-color: var(--main_b_color);
+  
+
+  @media (width > 40em) {
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+  }
+}
+aside a {
+  
+  scroll-snap-align: center;
+  width: 100%;
+  flex-shrink: 0;
+  touch-action: pan-y;
+  text-decoration: none;
+  color: var(--zwart);
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media (width > 40em) {
+    display: flex;
+    flex-direction: column-reverse;
+
+    max-width: 15em;
+  }
+}
+
+aside p{
+  margin: 0;
+  padding-bottom: 2em;
+  font-size: 0.9em;
+  color: var(--tusentekst);
+
+}
+
+aside h2 {
+  margin: 0;
+  position: absolute;
+  font-family: dior4;
+  font-weight: 300;
+  color: var(--donker_font);
+  background-color: var(--main_b_color);
+  line-height: 6em;
+  left: 0;
+  right: 0;
+}
+
+aside h3 {
+  color: var(--donker_font);
+  font-size: 0.9em;
+  font-family: hellix;
+  font-weight: 600;
+   order: 2;
+}
+
+aside img {
+  order: 3;
+}
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light dark;
+       --zwart: #000000;
+  --header: #ffffff;
+  --main_b_color: #121212;
+  --donker_font: #efefef;
+  --dark_achtergrond: #33383c;
+  --web_achtergrond: #ffffff;
+   --iconen_nav_zwart: #0f0f0f;
+   --iconen_nav_wit: #fcfcfc;
+  --tekst_video: #ffffff;
+  --tusentekst: #7B8487;
+  --tekst_fotos: #ffffff;
+  --bevestigen_knop_footer: #33383C;
+  --bevestigen_tekst: #bbbbbb;
+  --h3_footer_1: #2f3336;
+  --h3_kp_footer: #afb5b7;
+  --h2_footer: #2f3336;
+  --h3_p_footer_onder: #535455;
+  --hover_paypall: #E5E5E5;
+  --hover_buy:#5D676C;
+  --tussenlijn: #bababa;
+  }
 }
