@@ -129,7 +129,8 @@ Roos:
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-het positioneren van de hoofpagina gaat niet goed vooral met de video en daarna de elemnten onderaan
+het positioneren van de hoofpagina gaat niet goed vooral met de video en daarna de elemnten onderaan, 
+ik krigd de video niet goed helemaal bovenaan de pagina en onder de header. Verder heb ik ook moeite met de tekst goed krijgen boven de fotos
 
 
   ### Agenda voor meeting
@@ -181,9 +182,15 @@ hoe pas ik flexbox (of een grid) toe op een description list zonder divs te gebr
 
 </details>
 
+ <img src="readme-images/1.png" width="375px" alt="uitomst opdracht 1">
+ <img src="readme-images/2.png" width="375px" alt="uitomst opdracht 1">
+ <img src="readme-images/3.png" width="375px" alt="uitomst opdracht 1">
+ <img src="readme-images/4.png" width="375px" alt="uitomst opdracht 1">
+ <img src="readme-images/5.png" width="375px" alt="uitomst opdracht 1">
 
 
-
+<summary> 
+Het grootste wat er is uitgekomen van wat ik heb verbeterd aan de originele website van dior is dat ik een dark mode aan heb toegevoegd en  bij elke afbeelding alt tekst zodat het makkelijker is voor een sceenreader om te lezen. Daarnaast heb ik ook knopjes/pijltjes toegevoegd aan de carousel zodat het niet alleen slide functie is
 
 ## Voortgang 3 (week 4)
 
@@ -251,6 +258,17 @@ hoe hou ik een grid item vierkant op hele smalle schermen?
 </details>
 
 
+## Voortgang voor de herkansing
+
+ ### Wat heb ik gedaan:
+ Voor de herkansing heb ik een paar dingen nog allemaal aangepast. 
+
+ voor de homepage:
+ Ik heb daar de footer nog aangepst zodat het goed responsief is met een groter scherm en ik heb de plaatjes ook meer responsief gemaakt voor een groter scherm.
+
+ voor de product pagina:
+ Ik heb bij de product pagina vooral gewerkt aan de carousel maar later ging er ook veel tijd in aan de layout van de pagina. Vooral omdat ik veel oude dingen die ik had gedaan moest aanpassen en veranderen wat nog meer tijd in beslag nam. Ver heb ik ook alles in de huisstijl van dior gezet, gezorgd dat het mogelijk is om de webiste op dark mode te zekken en de laatste toegangkelijkheids dingen.
+ Waar ik het meeste moeite mee had was de layout goed en responsief krijgen zodat alles geod werkt op meerdere schermen
 
 
 
@@ -263,19 +281,10 @@ hoe hou ik een grid item vierkant op hele smalle schermen?
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://codepen.io/shooft/pen/yyJbYwa - Layout tweede pagina 
+  2. https://codepen.io/shooft/live/myepoJo - hamburger menu
+  3. https://codepen.io/shooft/pen/yLKjzWa - Carousel
 
 </details>
 
 
-
-details{
-  display: grid;
-gap: 2em;
-}
-
-summary::marker{
-  
-}
